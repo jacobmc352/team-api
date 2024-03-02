@@ -14,7 +14,7 @@ it("Should get a login token",async ()=>{
         })
     }
 
-    const response = await fetch('https://dev.stedi.me/login',options);
+    const response = await fetch('http://localhost:3000/dallen',options);
 
     token = await response.text();
     console.log("Token "+token);
